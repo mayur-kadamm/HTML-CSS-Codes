@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #0d2945;
+}
+
+
+/* MAIN CONTAINER */
+
+.login-container {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background:
+        linear-gradient(
+            rgba(0, 35, 70, 0.35),
+            rgba(0, 35, 70, 0.35)
+        ),
+        url("Images/mountain.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* LEFT SECTION */
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-content {
+    text-align: center;
+    color: white;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 65px;
+    margin-bottom: 35px;
+}
+
+
+/* WELCOME TEXT */
+
+.welcome-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.welcome-content h1 span {
+    color: #2993f5;
+}
+
+.welcome-content p {
+    font-size: 21px;
+}
+
+
+/* RIGHT SECTION */
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* LOGIN CARD */
+
+.login-card {
+    width: 450px;
+    padding: 40px 34px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+/* LOGIN TITLE */
+
+.login-card h2 {
+    text-align: center;
+
+    font-size: 32px;
+
+    color: #102542;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #617596;
+
+    margin-bottom: 32px;
+}
+
+
+/* INPUT BOX */
+
+.input-box {
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 15px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #d5dfed;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+}
+
+.input-box > i {
+    color: #122b4a;
+}
+
+.input-box input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+
+    color: #102542;
+}
+
+.input-box input::placeholder {
+    color: #6c82a3;
+}
+
+.password-icon {
+    cursor: pointer;
+}
+
+
+/* OPTIONS */
+
+.options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 22px 0;
+    
+    font-size: 14px;
+}
+
+.options label {
+    color: #172b4d;
+}
+
+.options input {
+    accent-color: #1677ed;
+}
+
+.options a {
+    color: #126de2;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-btn {
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #1677ed;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-btn i {
+    margin-left: 8px;
+}
+
+
+/* OR */
+
+.or {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 30px 0;
+}
+
+.or span {
+    height: 1px;
+
+    flex: 1;
+
+    background: #d5dce7;
+}
+
+.or p {
+    color: #657898;
+
+    font-size: 14px;
+}
+
+
+/* REGISTER */
+
+.register {
+    text-align: center;
+
+    color: #536b91;
+
+    font-size: 14px;
+}
+
+.register a {
+    color: #096be8;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+
+    bottom: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: white;
+
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-section {
+        min-height: 400px;
+    }
+
+    .login-section {
+        padding: 40px 20px;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    footer {
+        position: static;
+
+        text-align: center;
+
+        padding: 20px;
+    }
+}

@@ -1,0 +1,100 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+
+ html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #17132f;
+
+    background-image:
+        radial-gradient(circle at 80% 90%, #6575ff 0%, transparent 40%),
+        radial-gradient(circle at 20% 90%, #8b536d 0%, transparent 40%),
+        radial-gradient(circle at 60% 0%, #681b38 0%, transparent 45%);
+}
+/* here we give alignment */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color:transparent;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  width: 450px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.header-part{
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  background: white;
+  border-radius: 50%;
+  margin: 20px;
+  margin-left: 125px;
+}
+
+.header-part img{
+  height: 150px;
+  width: 150px;
+}
+
+.input-box{
+ 
+  height: 50px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: ;
+  
+}
+
+.container .input-box input::placeholder{
+  color: rgba(224, 220, 220, 0.7) ;
+  padding: 50px;
+ 
+  
+}
+
+.input-box i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.remember-forgot{
+  margin-left: 8px;
+}
+
+/* here we design forgot pass part */
+.remember-forgot a {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
